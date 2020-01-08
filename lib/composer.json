@@ -1,0 +1,6 @@
+{
+    "require": {
+        "twig/twig": "^2.0",
+        "pomo/pomo": "^1.4"
+    }
+}
