@@ -29,9 +29,9 @@ final class Project {
 		// We're going to return a Database_MySQLi *OR* a Database_MySQLi_Director object, depending on wether both
 		// master and slave variables are present.
 		if ($oSettingsMySQL->hasSlave()) {
-			return dbc_Database_MySQLi_Director::getInstance($oSettingsMySQL);
+			return Project\Database\MySQLi\Director::getInstance($oSettingsMySQL);
 		} else {
-			return dbc_Database_MySQLi::getInstance($oSettingsMySQL);
+			return Project\Database\MySQLi::getInstance($oSettingsMySQL);
 		}
 	}
 
